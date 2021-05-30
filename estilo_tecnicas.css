@@ -1,0 +1,24 @@
+/*Elemento comun a todo html*/
+/* Recuerda margen:*/
+/* Vertical | Horizontal */
+/* Arriba | Horizontal | Abajo */
+/* Arriba | Derecha | Abajo | Izquierda */
+audio{
+    margin: 1% 0% 3%;
+}
+img{
+    height: 100%;
+    width: 85%;
+}
+div.izquierda{
+    margin-right: 2.5%;
+    text-align: justify;
+}
+div.derecha{
+    margin-left: 2.5%;
+    text-align: justify;
+}
+video{
+    height: 50%;
+    width: 50%;
+}

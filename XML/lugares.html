@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Organiza tu vida - Organiza-T</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../estilo.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div>
+                    <a class="nav-link" href="index.html">Organiza-T</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                ¿Quieres comenzar a <b>mejorar tu organización</b>? Aquí te recomendamos lugares para <b>organizar tus eventos</b>.
+            </div>
+            <div>
+                <em>A continuaci&oacute;n podr&aacute;s consultar las condiciones meteorol&oacute;gicas en cada uno de ellos.</em>
+            </div>
+            <img class="small" src="multimedia/img/flecha-abajo.PNG" alt="Sigue leyendo">
+            <div>
+                <div>
+                    <h1 id="titulo1">Titulo1</h1>
+                    <p id="descripcion1"></p>
+                    <p id="p1"></p>
+                    <button id="boton1" onclick = "meteo1.verJSON('#boton1','#p1')">Obtener Tiempo</button>
+                </div>
+                <div>
+                    <h1 id="titulo2">Titulo2</h1>
+                    <p id="descripcion2"></p>
+                    <p id="p2"></p>
+                    <button id="boton2" onclick = "meteo2.verJSON('#boton2','#p2')">Obtener Tiempo</button>
+                </div>
+                <div>
+                    <h1 id="titulo3">Titulo3</h1>
+                    <p id="descripcion3"></p>
+                    <p id="p3"></p>
+                    <button id="boton3" onclick = "meteo3.verJSON('#boton3','#p3')">Obtener Tiempo</button>
+                </div>
+                <script src="lugares.js"></script>
+            </div>
+        </main>
+        <footer>
+            <div>Creado por <em>UO271411</em></div>
+        </footer>
+    </body>
+</html>

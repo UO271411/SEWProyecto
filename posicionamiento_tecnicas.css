@@ -1,0 +1,57 @@
+/*Elemento comun a todo html*/
+/* Recuerda margen:*/
+/* Vertical | Horizontal */
+/* Arriba | Horizontal | Abajo */
+/* Arriba | Derecha | Abajo | Izquierda */
+section{ 	/*Especificidad del selector = (001)*/
+	display: grid;
+	grid-template-areas: 'a a'
+						 'b b'
+                         'c d'
+                         'e e'
+                         'f f';
+}
+/*
+@media screen and (max-width: 800px){
+	body{
+		grid-template-areas: 'a a a'
+							 'c centro d'
+							 'b centro e '
+							 'f audio g'
+							 'z z z';
+	}
+	audio{
+		grid-area: audio;
+	}
+}
+*/
+div.introduccion{
+    grid-area: a;
+}
+div.arriba{
+    display: grid;
+    grid-area: b;
+    grid-template-areas:    'titulo titulo titulo imagen'
+                            'texto texto texto imagen';           
+}
+div.izquierda{
+    grid-area: c;
+}
+div.derecha{
+    grid-area: d;
+}
+div.abajo{
+    grid-area: f;
+}
+img{
+    grid-area: imagen;
+}
+p{
+    grid-area: texto;
+}
+h2{
+    grid-area: titulo;
+}
+div.prepie{
+    grid-area: e;
+}
